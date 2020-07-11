@@ -26,10 +26,18 @@ $productGap: 48px;
   border-radius: 5px;
 
   &__photo {
-    padding-top: 16px;
+    padding: 13px 0;
     display: flex;
     justify-content: center;
-    margin-bottom: 45px;
+    margin-bottom: 29px;
+
+    border: 3px solid transparent;
+    transition: transform 1s, border 0s;
+  }
+
+  &__photo:hover {
+    transform: scale(1.2);
+    border: 3px solid #f3f3f3;
   }
 
   &__img {
@@ -102,6 +110,8 @@ $productGap: 48px;
     color: #fff;
     border: 1px solid #00acdc;
     box-sizing: border-box;
+
+    transition: 1s;
   }
   
   &__buy:hover {
