@@ -111,11 +111,11 @@ $productGap: 48px;
     border: 1px solid #00acdc;
     box-sizing: border-box;
 
-    transition: color 1s, background 1s;
+    transition: background-color 1s, color 1s;
   }
   
   &__buy:hover {
-    background: #fff;
+    background-color: #fff;
     color: #00acdc;
   }
 }
