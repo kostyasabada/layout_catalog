@@ -7,11 +7,13 @@ $productVerticalGap:50px;
 }
 
 .catalog {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, $productWidth);
+  grid-template-columns: repeat(auto-fill, $productWidth);
   grid-gap: $productVerticalGap $productRowGap;
   justify-content: center;
   padding: 0;
+  max-width: 4 * $productWidth + 3 * $productRowGap;
 }
 
 .product {
