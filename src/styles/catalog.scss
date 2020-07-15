@@ -1,5 +1,6 @@
 $productWidth: 200px;
-$productGap: 48px;
+$productRowGap: 48px;
+$productVerticalGap:50px;
 
 .product-section {
   padding: 0 40px;
@@ -8,16 +9,16 @@ $productGap: 48px;
 .catalog {
   padding: 0;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: $productWidth * 4 + $productGap * 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $productWidth);
+  grid-gap: $productVerticalGap $productRowGap;
+  justify-content: center;
+  max-width: 4 * $productWidth + 3 * $productRowGap;
 }
 
 .product {
   box-sizing: border-box;
   list-style: none;
-  margin-bottom: 50px;
   font-size: 11px;
   line-height: 13px;
   flex: 0 0 $productWidth ;
