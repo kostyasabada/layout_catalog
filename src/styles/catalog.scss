@@ -1,23 +1,22 @@
 $productWidth: 200px;
-$productGap: 48px;
+$productRowGap: 48px;
+$productVerticalGap:50px;
 
 .product-section {
   padding: 0 40px;
 }
 
 .catalog {
+  display: grid;
+  grid-template-columns: repeat(4, $productWidth);
+  grid-gap: $productVerticalGap $productRowGap;
+  justify-content: center;
   padding: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: $productWidth * 4 + $productGap * 3;
 }
 
 .product {
   box-sizing: border-box;
   list-style: none;
-  margin-bottom: 50px;
   font-size: 11px;
   line-height: 13px;
   flex: 0 0 $productWidth ;
